@@ -7,9 +7,9 @@ One way to create a PDF out of the resulting obf file is to open it up in  meshl
 
 
 ## Usage
-	convert.py input_file edge_length
+	xyz-to-obj.py input_file edge_length
 
 where input_file is the point cloud and edge_length the lenghth of the edge of the cubes
 
 ## Example
-	python convert.py example.xyz 0.1
+	python xyz-to-obj.py example.xyz 0.1
