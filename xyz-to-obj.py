@@ -7,7 +7,7 @@ if len(sys.argv) == 2:
 	input_file = sys.argv[1]
 elif len(sys.argv) == 3:
 	input_file = sys.argv[1]
-	edge_length = float(sys.argv[2])
+	edge_length = float(sys.argv[2]) / 2
 else:
 	print('Usage: xyz-to-obj.py input_file edge_length', 'asd')
 	exit()
