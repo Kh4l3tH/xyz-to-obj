@@ -18,8 +18,9 @@ with open(output_file, 'a') as output_file:
 	with open(input_file) as input_file:
 		for i, line in enumerate(input_file):
 			n = i*8
+			if line.startswith("#"): continue # ignore comments in xyz files
+			line = line.strip().split() # get rid of leading and trailing white space, then split by white space
 
-			line = line.split(' ')
 			x = float(line[0])
 			y = float(line[1])
 			z = float(line[2])
